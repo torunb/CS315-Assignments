@@ -1,0 +1,33 @@
+int x = 6;
+int y = 2;
+bool cont = true;
+
+while(cont)
+{
+    if( y < 32)
+    {
+        x = x / 2;
+        y = 2 * x;
+        display("x and y values are ");
+        display(x);
+        display(y);
+    }
+    else
+    {
+        cont = false;
+        display("Limit is reached");
+        float b = readSensor(4,3);
+        continue;
+    }
+    x = x * 6;
+}
+
+function float readSensor(int sensor, int timestamp)
+{
+    int y = getTimeStamp(20);
+    if( y <= 4000)
+    {
+        float x12result = readData(sensor);
+        connectUrl("https://localhost:1200");        
+    }
+}

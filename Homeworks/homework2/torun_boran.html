@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>User Controlled Loops</h2>
+
+<script>
+
+// break 
+for(let i = 0; i < 5; i++)
+{
+  console.log("i = " + i);
+}
+
+console.log("-----------")
+
+for(let i = 0; i < 5; i++)
+{
+  console.log("i = " + i);
+  break;
+}
+
+console.log("-----------")
+
+goto1:
+for(let i = 0; i < 5; i++)  
+{
+  console.log("i = " + i);
+  break goto1;
+}
+
+console.log("-----------")
+
+goto2:
+for(let i = 0; i < 5; i++)
+{
+  for(let j = 0; j < 5; j++)
+  {
+    if( i == 3)
+    {
+      break goto2;
+    }
+    console.log("i = " + i + " j = " + j);
+  }
+}
+
+console.log("-----------")
+
+// continue
+for(let i = 0; i < 5; i++)
+{
+  console.log("i = " + i);
+  continue;
+}
+
+console.log("-----------")
+
+goto3:
+for(let i = 0; i < 5; i++)
+{
+  if(i == 2)
+  {
+    continue goto3;
+  }
+  console.log("i = " + i);
+}
+
+console.log("-----------")
+
+goto4:
+for(let i = 0; i < 5; i++)
+{
+  for(let j = 0; j < 5; j++)
+  {
+    if( i == 3)
+    {
+      continue goto4;
+    }
+    console.log("i = " + i + " j = " + j);
+  }
+}
+
+</script>
+
+</body>
+</html>

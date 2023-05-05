@@ -1,0 +1,23 @@
+if( sensor < 4 && sensor > 1)
+{
+display( sensor); 
+string s;
+}
+
+function int main()
+{
+    int ya = 34;
+    do
+    {
+        if( ya < 24.2)
+        {
+            displaySensor(ya);
+            continue;
+        }
+        ya--;
+        connectUrl("https://www.google.com");
+    }
+    while(ya > 0);
+    int x , y = 3;
+    y = (1.0) * x / 4 * (2.0);
+}

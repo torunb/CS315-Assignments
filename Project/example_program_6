@@ -1,0 +1,33 @@
+string a,b,d;
+getTimeStamp();
+
+int s = 0;
+string a = "dfsdf";
+int a = 5 + 7;
+
+char g = '3';
+
+while ( x < 5 ) {
+    display(45);
+}
+
+int x;
+for (x=0; x <= 5; x++) {
+    display(45);
+}
+/*This is a comment*/
+
+function void aaa(int a, string c) {
+    display("sdfs");
+    for (x=0; x <= 5; x++) {
+        display(45);
+    }
+}
+
+function void aaa(int a, string c) {
+    display("sdfs");
+    string o;
+}
+
+
+

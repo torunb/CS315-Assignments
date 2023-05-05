@@ -1,0 +1,38 @@
+int i;
+int a /*Semicolon is missed purposefuly to have some bugs*/
+for( i = 0; i < 6; i++)
+{
+    int a = readData(i);
+    int b = readData(i + 1);
+    int result = compute('*', a, b);
+    if(result != 32)
+    {
+        a = x * y;
+        y = a / 4; 
+        break;
+    }
+}
+
+string b = int a /*Wrong statement is used purposefuly to have some bugs*/
+
+
+function int compute( char op,int x, int y)
+{
+    if( op == '+')
+    {
+        return x + y;
+    }
+    else
+    {
+        if( op == '/')
+        {
+            return x / y;
+        }
+        if( op == '-'){
+            return x - y;
+        }
+        if( op == '*'){
+            return x * y;
+        }
+    }
+}

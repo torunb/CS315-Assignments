@@ -1,0 +1,41 @@
+int x = 1;
+int y = 47;
+
+bool xIsEven = isEven(x);
+bool yIsEven = isEven(y);
+
+if (xIsEven) 
+{
+    print(x);
+    print(" is even");
+}
+else 
+{
+    print(x);
+    print(" is odd");
+}
+
+if (yIsEven) 
+{
+    print(y);
+    print(" is even");
+}
+else 
+{
+    print(y);
+    print(" is odd");
+}
+
+
+/* Works only for positive integers */
+function bool isEven(int a) 
+{    
+    int i;
+    while (a > 0) {
+        a = a - 2;
+        if (a == 0) {
+            return true;
+        }
+    }
+    return false;
+}

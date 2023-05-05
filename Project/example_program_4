@@ -1,0 +1,25 @@
+int x = 3;
+int y = 4;
+int z = 0;
+string URL = "www.URL.com";
+while(x < 3 && y >= 5 || x > 7 && y <= 2 ){
+    if ( x > 7)
+    {
+        int d;
+        for (d = 87; d >= 0; d--) {
+            int currentTimeStamp = getTimeStamp(d);
+            display(currentTimeStamp);
+            if (d == 45) {
+                break;
+            }
+        }
+    }
+    else {
+        if (x < 2) {
+            sendIntToConnection(URL, 10);
+        }
+        /* Connection sends the switch*/
+        int response = receiveIntFromConnection(URL);
+        setSwitch(true, response);
+    }
+}

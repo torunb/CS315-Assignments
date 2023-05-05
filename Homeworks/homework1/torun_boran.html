@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Associative Array</h2>
+
+<p>This is for to see associative array structure in js.</p>
+
+
+<script>
+// Initialize the array
+console.log("Initial array");
+let assocArr = {Name: "Boran", Year: 3, Role: "Student"};
+for(i in assocArr)
+{
+  foo(i, assocArr);
+}
+console.log("\n");
+
+// Get the value for given key
+console.log("Get the value for given key");
+console.log("Name is", assocArr.Name);
+console.log("\n");
+
+// Add a new element
+console.log("Add a new element");
+assocArr["Dormitory"] = 82;
+for(i in assocArr)
+{
+  foo(i, assocArr);
+}
+console.log("\n");
+
+// Remove an element
+console.log("Remove an element");
+delete assocArr["Year"];
+for(i in assocArr)
+{
+  foo(i, assocArr);
+}
+console.log("\n");
+
+// Modify the value of an existing element
+console.log("Modify the value of an existing element");
+assocArr["Role"] = "Undergrad Student";
+for(i in assocArr)
+{
+  foo(i, assocArr);
+}
+console.log("\n");
+
+// Search for the existence of the key
+if("Role" in assocArr)
+{
+	console.log("This associative array contains this key");
+}
+else
+{
+	console.log("This associative array doesn't contain this key");
+}
+console.log("\n");
+
+// Search for the existence of the value
+if(3 in assocArr)
+{
+	console.log("This associative array contains this value");
+}
+else
+{
+	console.log("This associative array doesn't contain this value");
+}
+console.log("\n");
+
+// Function definition of foo in Javascript
+function foo(i, assocArr)
+{
+  console.log(i, ":", assocArr[i]);
+}
+
+for(i in assocArr)
+{
+  foo(i, assocArr);
+}
+
+</script>
+
+</body>
+</html>
